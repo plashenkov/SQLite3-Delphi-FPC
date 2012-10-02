@@ -1,9 +1,8 @@
 {
-  $Id$
+  SQLite for Delphi and FreePascal/Lazarus
 
-  Complete SQLite3 API translation and simple wrapper for Delphi and FreePascal
-  Copyright © 2010 IndaSoftware Inc. and contributors. All rights reserved.
-  http://www.indasoftware.com/fordev/sqlite3/
+  © 2010 Yury Plashenkov <plashenkov@gmail.com>
+  http://www.indasoftware.com/sqlite/
 
   SQLite is a software library that implements a self-contained, serverless,
   zero-configuration, transactional SQL database engine. The source code for
