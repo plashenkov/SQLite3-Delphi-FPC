@@ -22,8 +22,8 @@ Unzip the package somewhere on your hard drive. Now you need to add the full pat
 folder to your IDE options.
 
 #### For Delphi 6–7 or C++Builder 6
-Select **Tools > Environment Options** from the menu, then go to the **Library** tab and add the
-full path of this package's Source directory to the **Library Path**.
+Select *Tools > Environment Options* from the menu, then go to the *Library* tab and add the full
+path of this package's Source directory to the *Library Path*.
 
 #### For Delphi 2005 and up, or C++Builder 2006 and up
 Select *Tools > Options* from the menu, then select *Environment Options > Delphi Options >
