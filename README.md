@@ -4,7 +4,7 @@ SQLite for Delphi and FreePascal/Lazarus
 This package contains complete SQLite3 API translation for Delphi and FreePascal, as well as a
 simple Unicode-enabled object wrapper to simplify the use of this database engine.
 
-Compatible with Delphi/C++Builder 6–XE2 and FreePascal/Lazarus.
+Compatible with Delphi/C++Builder 6–XE3 and FreePascal/Lazarus.
 
 SQLite
 ------
