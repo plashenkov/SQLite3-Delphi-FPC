@@ -30,6 +30,10 @@
 }
 unit SQLite3;
 
+{$IFDEF FPC}
+  {$MODE DELPHI}
+{$ENDIF}
+
 { $DEFINE SQLITE_DEPRECATED}              // Enable deprecated functions
 { $DEFINE SQLITE_EXPERIMENTAL}            // Enable experimental functions
 
@@ -804,7 +808,7 @@ const
   SQLITE_TESTCTRL_RESERVE             = 14;
   SQLITE_TESTCTRL_OPTIMIZATIONS       = 15;
   SQLITE_TESTCTRL_ISKEYWORD           = 16;
-  SQLITE_TESTCTRL_LAST                = 16;
+  SQLITE_TESTCTRL_LAST                = 16;
 
 {$IFDEF SQLITE_EXPERIMENTAL}
 function sqlite3_status(op: Integer; var pCurrent: Integer; var pHighwater: Integer; resetFlag: Integer): Integer; cdecl; external sqlite3_lib;

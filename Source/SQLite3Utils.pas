@@ -29,6 +29,10 @@
 }
 unit SQLite3Utils;
 
+{$IFDEF FPC}
+  {$MODE DELPHI}
+{$ENDIF}
+
 {$WARN SYMBOL_DEPRECATED OFF}
 
 interface

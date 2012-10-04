@@ -99,7 +99,7 @@ type
     procedure BindNull(const ParamName: WideString); overload;
     procedure BindBlob(const ParamName: WideString; Data: Pointer; const Size: Integer); overload;
     procedure BindZeroBlob(const ParamName: WideString; const Size: Integer); overload;
-	procedure ClearBindings;
+    procedure ClearBindings;
 
     function Step: Integer;
 
@@ -295,7 +295,7 @@ var
 begin
   S := StrToUTF8(Value);
   FOwnerDatabase.Check(
-    sqlite3_bind_text(FHandle, ParamIndex, PAnsiChar(S), Length(S), SQLITE_STATIC)
+    sqlite3_bind_text(FHandle, ParamIndex, PAnsiChar(S), Length(S), SQLITE_TRANSIENT)
   );
 end;
 
