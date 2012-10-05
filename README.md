@@ -6,8 +6,8 @@ transactional SQL database engine. The source code for SQLite is in the public d
 free for use for any purpose, commercial or private. SQLite is the most widely deployed SQL database
 engine in the world.
 
-This package contains complete SQLite3 API translation for Delphi and FreePascal, as well as a
-simple Unicode-enabled object wrapper to simplify the use of this database engine.
+This package contains complete SQLite3 API translation for Delphi and FreePascal/Lazarus, as well as
+a simple Unicode-enabled object wrapper to simplify the use of this database engine.
 
 
 Compatibility
