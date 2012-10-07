@@ -1,7 +1,7 @@
 {
   SQLite for Delphi and FreePascal/Lazarus
 
-  Copyright 2010 Yury Plashenkov <plashenkov@gmail.com>
+  Copyright 2010-2012 Yury Plashenkov <plashenkov@gmail.com>
   http://www.indasoftware.com/sqlite/
 
   SQLite is a software library that implements a self-contained, serverless,
@@ -263,7 +263,7 @@ end;
 procedure TSQLite3Statement.BindBlob(const ParamIndex: Integer; Data: Pointer;
   const Size: Integer);
 begin
-  FOwnerDatabase.Check(sqlite3_bind_blob(FHandle, ParamIndex, Data, Size, SQLITE_STATIC));
+  FOwnerDatabase.Check(sqlite3_bind_blob(FHandle, ParamIndex, Data, Size, SQLITE_TRANSIENT));
 end;
 
 procedure TSQLite3Statement.BindDouble(const ParamIndex: Integer;
