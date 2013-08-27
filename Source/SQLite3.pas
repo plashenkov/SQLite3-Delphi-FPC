@@ -563,7 +563,7 @@ procedure sqlite3_result_value(pCtx: PSQLite3Context; pValue: PSQLite3Value); cd
 procedure sqlite3_result_zeroblob(pCtx: PSQLite3Context; n: Integer); cdecl; external sqlite3_lib;
 
 type
-  TSQLite3CollationCompare = procedure(pUser: Pointer; n1: Integer; const z1: Pointer; n2: Integer; const z2: Pointer); cdecl;
+  TSQLite3CollationCompare = function(pUser: Pointer; n1: Integer; const z1: Pointer; n2: Integer; const z2: Pointer): Integer; cdecl;
   TSQLite3CollationDestructor = procedure(pUser: Pointer); cdecl;
 
 function sqlite3_create_collation(db: PSQLite3; const zName: PAnsiChar; eTextRep: Integer; pUser: Pointer; xCompare: TSQLite3CollationCompare): Integer; cdecl; external sqlite3_lib;
