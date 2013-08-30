@@ -33,8 +33,6 @@ unit SQLite3Utils;
   {$MODE DELPHI}
 {$ENDIF}
 
-{  $WARN SYMBOL_DEPRECATED OFF}
-
 interface
 
 function StrToUTF8(const S: WideString): AnsiString;
@@ -85,11 +83,11 @@ function FloatToSQLStr(Value: Extended): WideString;
 var
   FS: TFormatSettings;
 begin
-  {$IFDEF FPC}
-    FS := DefaultFormatSettings;
-  {$ELSE}
-    GetLocaleFormatSettings(GetThreadLocale, FS);
-  {$ENDIF}
+{$IFDEF FPC}
+  FS := DefaultFormatSettings;
+{$ELSE}
+  GetLocaleFormatSettings(GetThreadLocale, FS);
+{$ENDIF}
   FS.DecimalSeparator := '.';
   Result := FloatToStr(Value, FS);
 end;
