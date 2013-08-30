@@ -7,7 +7,7 @@ object Form_Main: TForm_Main
   ClientHeight = 396
   ClientWidth = 657
   Position = poScreenCenter
-  LCLVersion = '1.1'
+  LCLVersion = '1.0.12.0'
   object Memo_Result: TMemo
     Left = 154
     Height = 396

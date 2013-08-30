@@ -1,8 +1,8 @@
 {
   SQLite for Delphi and FreePascal/Lazarus
 
-  Copyright 2010-2012 Yury Plashenkov <plashenkov@gmail.com>
-  http://www.indasoftware.com/sqlite/
+  Copyright 2010-2013 Yury Plashenkov <plashenkov@gmail.com>
+  http://www.plashenkov.com/projects/sqlite/
 
   SQLite is a software library that implements a self-contained, serverless,
   zero-configuration, transactional SQL database engine. The source code for
@@ -33,7 +33,7 @@ unit SQLite3Utils;
   {$MODE DELPHI}
 {$ENDIF}
 
-{$WARN SYMBOL_DEPRECATED OFF}
+{  $WARN SYMBOL_DEPRECATED OFF}
 
 interface
 
@@ -44,7 +44,8 @@ function FloatToSQLStr(Value: Extended): WideString;
 
 implementation
 
-uses SysUtils;
+uses
+  {$IFNDEF FPC}Windows,{$ENDIF} SysUtils;
 
 function StrToUTF8(const S: WideString): AnsiString;
 begin
@@ -82,15 +83,15 @@ end;
 
 function FloatToSQLStr(Value: Extended): WideString;
 var
-  SaveSeparator: Char;
+  FS: TFormatSettings;
 begin
-  SaveSeparator := DecimalSeparator;
-  DecimalSeparator := '.';
-  try
-    Result := FloatToStr(Value);
-  finally
-    DecimalSeparator := SaveSeparator;
-  end;
+  {$IFDEF FPC}
+    FS := DefaultFormatSettings;
+  {$ELSE}
+    GetLocaleFormatSettings(GetThreadLocale, FS);
+  {$ENDIF}
+  FS.DecimalSeparator := '.';
+  Result := FloatToStr(Value, FS);
 end;
 
 end.

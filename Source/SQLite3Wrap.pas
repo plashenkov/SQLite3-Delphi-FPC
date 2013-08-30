@@ -1,8 +1,8 @@
 {
   SQLite for Delphi and FreePascal/Lazarus
 
-  Copyright 2010-2012 Yury Plashenkov <plashenkov@gmail.com>
-  http://www.indasoftware.com/sqlite/
+  Copyright 2010-2013 Yury Plashenkov <plashenkov@gmail.com>
+  http://www.plashenkov.com/projects/sqlite/
 
   SQLite is a software library that implements a self-contained, serverless,
   zero-configuration, transactional SQL database engine. The source code for
@@ -102,6 +102,8 @@ type
     procedure ClearBindings;
 
     function Step: Integer;
+    procedure Reset;
+    function StepAndReset: Integer;
 
     function ColumnCount: Integer;
     function ColumnName(const ColumnIndex: Integer): WideString;
@@ -112,9 +114,6 @@ type
     function ColumnText(const ColumnIndex: Integer): WideString;
     function ColumnBlob(const ColumnIndex: Integer): Pointer;
     function ColumnBytes(const ColumnIndex: Integer): Integer;
-
-    procedure Reset;
-    procedure StepAndReset;
 
     property Handle: PSQLite3Stmt read FHandle;
     property OwnerDatabase: TSQLite3Database read FOwnerDatabase;
@@ -140,7 +139,8 @@ type
 
 implementation
 
-uses SQLite3Utils;
+uses
+  SQLite3Utils;
 
 resourcestring
   SErrorMessage = 'SQLite3 error: %s';
@@ -390,9 +390,9 @@ begin
   Result := sqlite3_step(FHandle);
 end;
 
-procedure TSQLite3Statement.StepAndReset;
+function TSQLite3Statement.StepAndReset: Integer;
 begin
-  Step;
+  Result := Step;
   Reset;
 end;
 

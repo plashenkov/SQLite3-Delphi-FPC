@@ -1,8 +1,8 @@
 {
   SQLite for Delphi and FreePascal/Lazarus
 
-  Copyright 2010-2012 Yury Plashenkov <plashenkov@gmail.com>
-  http://www.indasoftware.com/sqlite/
+  Copyright 2010-2013 Yury Plashenkov <plashenkov@gmail.com>
+  http://www.plashenkov.com/projects/sqlite/
 
   SQLite is a software library that implements a self-contained, serverless,
   zero-configuration, transactional SQL database engine. The source code for

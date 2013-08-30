@@ -42,7 +42,8 @@ begin
   // Delete database if it already exists
   DeleteFile('artists.db');
 
-  // Create datatbase and fill it with example data
+  // Create database and fill it with example data
+  Screen.Cursor := crHourGlass;
   DB := TSQLite3Database.Create;
   try
     DB.Open('artists.db');
@@ -170,8 +171,11 @@ begin
     finally
       Stmt.Free;
     end;
+
+    ShowMessage('Database created.');
   finally
     DB.Free;
+    Screen.Cursor := crDefault;
   end;
 end;
 
