@@ -45,5 +45,5 @@ your program.
 Credits
 -------
 
-Yury Plashenkov (http://www.plashenkov.com), developer. 
+Yury Plashenkov (http://www.plashenkov.com), developer.  
 Marek Mauder (http://galfar.vevb.net), contributor.
