@@ -12,7 +12,8 @@ a simple Unicode-enabled object wrapper to simplify the use of this database eng
 
 Compatibility
 -------------
-Compatible with Delphi/C++Builder 6–XE3 and FreePascal/Lazarus.
+
+Compatible with Delphi/C++Builder 6–XE5 and FreePascal/Lazarus.
 
 
 Installation and usage notes
@@ -41,6 +42,8 @@ Do not forget to distribute the shared library (sqlite3.dll for Windows, sqlite3
 your program.
 
 
-Contributors
-------------
-Thanks Marek Mauder (http://galfar.vevb.net) for his contributions.
+Credits
+-------
+
+Yury Plashenkov (http://www.plashenkov.com), developer.
+Marek Mauder (http://galfar.vevb.net), contributor.
