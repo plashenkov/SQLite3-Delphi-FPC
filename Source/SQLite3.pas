@@ -5,7 +5,7 @@
  * Version of SQLite: 3.6.22
  *
  * Copyright 2010-2013 Yury Plashenkov
- * http://plashenkov.github.com/sqlite/
+ * http://plashenkov.github.io/sqlite/
  *
  * The MIT License (MIT)
  *
