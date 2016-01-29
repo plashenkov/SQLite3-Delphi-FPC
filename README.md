@@ -1,5 +1,4 @@
-SQLite for Delphi and FreePascal/Lazarus
-========================================
+# SQLite for Delphi and FreePascal/Lazarus
 
 SQLite is a software library that implements a self-contained, serverless, zero-configuration,
 transactional SQL database engine. The source code for SQLite is in the public domain and is thus
@@ -9,15 +8,11 @@ engine in the world.
 This package contains complete SQLite3 API translation for Delphi and FreePascal/Lazarus, as well as
 a simple Unicode-enabled object wrapper to simplify the use of this database engine.
 
-
-Compatibility
--------------
+## Compatibility
 
 Compatible with Delphi/C++Builder 6–XE5 and FreePascal/Lazarus.
 
-
-Installation and usage notes
-----------------------------
+## Installation and usage notes
 
 Unzip the package somewhere on your hard drive. Now you need to add the full path of the Source
 folder to your IDE options.
@@ -41,9 +36,12 @@ wrapper.
 Do not forget to distribute the shared library (sqlite3.dll for Windows, sqlite3.so for Linux) with
 your program.
 
+## Credits
 
-Credits
--------
+- [Yury Plashenkov](https://github.com/plashenkov), developer
+- [Marek Mauder](http://galfar.vevb.net), contributor
+- [Alexander Kotliarskyi](https://github.com/frantic), contributor
 
-Yury Plashenkov (http://www.plashenkov.com), developer.  
-Marek Mauder (http://galfar.vevb.net), contributor.
+## License
+
+The Bliss framework is licensed under the [MIT license](LICENSE.md).
