@@ -18,14 +18,17 @@ Unzip the package somewhere on your hard drive. Now you need to add the full pat
 folder to your IDE options.
 
 #### For Delphi 6–7 or C++Builder 6
+
 Select *Tools > Environment Options* from the menu, then go to the *Library* tab and add the full
 path of this package's Source directory to the *Library Path*.
 
 #### For Delphi 2005 and up, or C++Builder 2006 and up
+
 Select *Tools > Options* from the menu, then select *Environment Options > Delphi Options >
 Library - Win32*, and add the full path of this package's Source directory to the *Library Path*.
 
 #### For Lazarus
+
 Select *Environment > Options* from the menu, then select *CodeTools*, and add the full path of this
 package's Source directory to the *Search Path* ("Additional source search path for all projects").
 
@@ -44,4 +47,4 @@ your program.
 
 ## License
 
-The Bliss framework is licensed under the [MIT license](LICENSE.md).
+This package is licensed under the [MIT license](LICENSE.md).
