@@ -4,10 +4,9 @@
  * This unit contains complete SQLite3 API translation
  * Version of SQLite: 3.6.22
  *
- * Copyright 2010-2013 Yury Plashenkov
- * http://plashenkov.github.io/sqlite/
+ * Copyright 2010-2013 Yuri Plashenkov
  *
- * The MIT License (MIT)
+ * MIT License
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the "Software"),
