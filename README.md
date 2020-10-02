@@ -41,8 +41,8 @@ your program.
 
 ## Credits
 
-- [Yury Plashenkov](https://github.com/plashenkov), developer
-- [Marek Mauder](http://galfar.vevb.net), contributor
+- [Yuri Plashenkov](https://github.com/plashenkov), developer
+- [Marek Mauder](https://github.com/galfar), contributor
 - [Alexander Kotliarskyi](https://github.com/frantic), contributor
 
 ## License
