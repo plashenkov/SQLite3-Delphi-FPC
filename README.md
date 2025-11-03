@@ -17,12 +17,12 @@ Compatible with Delphi 7 and later, and FreePascal/Lazarus.
 Unzip the package somewhere on your hard drive. Now you need to add the full path of the Source
 folder to your IDE options.
 
-#### For Delphi 7 or C++Builder 6
+#### For Delphi 7
 
 Select *Tools > Environment Options* from the menu, then go to the *Library* tab and add the full
 path of this package's Source directory to the *Library Path*.
 
-#### For Delphi 2005 and up, or C++Builder 2006 and up
+#### For Delphi 2005 and up
 
 Select *Tools > Options* from the menu, then select *Environment Options > Delphi Options >
 Library - Win32*, and add the full path of this package's Source directory to the *Library Path*.
