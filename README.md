@@ -1,50 +1,45 @@
-# SQLite for Delphi and FreePascal/Lazarus
+# SQLite for Delphi and FreePascal / Lazarus
 
-SQLite is a software library that implements a self-contained, serverless, zero-configuration,
-transactional SQL database engine. The source code for SQLite is in the public domain and is thus
-free for use for any purpose, commercial or private. SQLite is the most widely deployed SQL database
-engine in the world.
+SQLite is a software library that implements a self-contained,
+serverless, zero-configuration, transactional SQL database engine.
+The source code for SQLite is in the public domain and is thus free
+for use for any purpose, commercial or private.
+SQLite is the most widely deployed SQL database engine in the world.
 
-This package contains complete SQLite3 API translation for Delphi and FreePascal/Lazarus, as well as
-a simple Unicode-enabled object wrapper to simplify the use of this database engine.
+This package contains a complete SQLite API translation for Delphi and FreePascal / Lazarus,
+as well as a simple Unicode-enabled object wrapper to simplify working with the database engine.
 
 ## Compatibility
 
-Compatible with Delphi 7 and later, and FreePascal/Lazarus.
+- Delphi 7 and later
+- FreePascal / Lazarus
 
-## Installation and usage notes
+## Installation
 
-Unzip the package somewhere on your hard drive. Now you need to add the full path of the Source
-folder to your IDE options.
+1. Unzip the package to a directory of your choice.
+2. Add the **Source** directory to your IDE or project settings:
+   - **Delphi**: 
+     - **Global**: Add the path to *Library path* in the environment options.
+     - **Project-specific**: Add the path to *Search path* in *Project Options*.
+   - **Lazarus**: 
+     - **Global**: Add the path to *Additional source search path for all projects* in the IDE options.
+     - **Project-specific**: Add the path to *Other unit files* in *Project Options > Compiler Options*.
 
-#### For Delphi 7
+## Usage
 
-Select *Tools > Environment Options* from the menu, then go to the *Library* tab and add the full
-path of this package's Source directory to the *Library Path*.
+To use the SQLite API directly, add the `SQLite3` unit to your `uses` clause.
+If you prefer working with the object wrapper, use the `SQLite3Wrap` unit.
 
-#### For Delphi 2005 and up
-
-Select *Tools > Options* from the menu, then select *Environment Options > Delphi Options >
-Library - Win32*, and add the full path of this package's Source directory to the *Library Path*.
-
-#### For Lazarus
-
-Select *Environment > Options* from the menu, then select *CodeTools*, and add the full path of this
-package's Source directory to the *Search Path* ("Additional source search path for all projects").
-
-When using this translation in your projects, add the SQLite3 unit to the uses clause of your source
-file if you want to use SQLite3 API, and the SQLite3Wrap unit if you want to use the accompanying
-wrapper.
-
-Do not forget to distribute the shared library (sqlite3.dll for Windows, sqlite3.so for Linux) with
-your program.
+Make sure to distribute the appropriate shared library
+(**sqlite3.dll** for Windows, **sqlite3.so** for Linux, etc.)
+along with your executable.
 
 ## Credits
 
-- [Yuri Plashenkov](https://github.com/plashenkov), developer
-- [Marek Mauder](https://github.com/galfar), contributor
-- [Alexander Kotliarskyi](https://github.com/frantic), contributor
+- [Yuri Plashenkov](https://github.com/plashenkov) — developer
+- [Marek Mauder](https://github.com/galfar) — contributor
+- [Alexander Kotliarskyi](https://github.com/frantic) — contributor
 
 ## License
 
-This package is licensed under the [MIT license](LICENSE.md).
+This package is licensed under the [MIT License](LICENSE.md).
